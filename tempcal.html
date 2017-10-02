@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link type="text/css" rel="stylesheet" href="temp.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script>src="temp.js"</script>
+<body>
+        <nav>
+                <div class="container-fluid">
+                    <div class="row">
+                    <ul>
+                            <div class="col-md-2">
+                        <li><a>Saiteja Jonnalagadda</a></li>
+                        
+                        </div>
+                            <div class="col-md-1">
+                            <li><a  href= Saiteja.html>Home</a></li>
+                            </div>
+                            <div class="col-md-2">
+                            <li><a href= tempcal.html> Temperature Converter</a></li>
+                        </div>
+                        <div class="col-md-2">
+                            <li><a  href= contact.html> Contact</a></li>
+                            </div>
+                            <div class="col-md-1">
+                            <li class="icons"><a  href="https://www.facebook.com/teja.jonnala">
+                            <img alt=Home src="facebook.png" height="25" width="25"></a></li>
+                            </div>
+             
+                                
+                                <div class="col-md-1">
+            
+                                                    <li class="icons"><a  href="https://www.instagram.com/saiteja_jonnalagadda/">
+                                                        
+                                    <img alt=Home src="insta.png" height="25" width="25"></a></li></div>
+                                    <div class="col-md-1">
+                                    <li class="icons"><a  href="https://www.linkedin.com/feed/?trk=uno-choose-home">
+                                        <img alt=Home src="link.png" height="25" width="25">
+                                        </a></li></div>
+                                        
+                                        
+                                        <div class="col-md-1">
+                                        <li class="icons"><a  href="https://github.com/saiteja007">
+                                            <img alt=Home src="github.png" height="25" width="25">
+                                            </a></li></div>
+                                            
+                                            <div class="col-md-1">
+                                            <li class="icons"><a  href="https://bitbucket.org/saiteja007/">
+                                                <img alt=Home src="bitbucket.png" height="25" width="25">
+                                                
+                                                </a></li></div>
+                                                
+                          </ul></div>
+                        </nav>
+                        <div class="container">
+<h2>Temperature Converter</h2>
+<p id="heading">Type a value in the Fahrenheit field to convert the value to Celcius:</p>
+
+<div class="labels">
+  <label id="Inputlabel">Fahrenheit:</label>
+  <input id="inputFahrenheit" type="number" name="tempinput"placeholder="Input Temparature" oninput="temperatureConverter()" onkeypress="temperatureConverter(this.value)">
+   <br/> 
+   <label>Inverse:</label><input type="checkbox" id = "inverseSelect" onchange="temperatureConverter()" name="inverse" value=true/>
+</div>
+<div class="abc">
+<label id="OutputLabel">Celsius: </label><span style="padding-left:10px"id="outputCelcius"></span>
+</div>
+</div>
+
+
+
+<script src="temp.js"></script>
+</body>
+</html>
